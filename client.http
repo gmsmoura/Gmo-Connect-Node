@@ -5,22 +5,30 @@ POST http://{{host}}/subscriptions
 Content-Type: application/json
 
 {
-  "name": "Invited",
-  "email": "invited@rocketseat.team",
-  "referrer": "3cc72c15-34b5-4933-b6bf-854ac97dd60d"
+  "name": "Guilherme Moura",
+  "email": "gui_moura6@me.com",
+  "referrer": "6a7d9b6a-6651-4fad-a442-31c4af5cb91f"
 }
 
 ### Access invite link
-GET http://{{host}}/invites/4b7b21d9-2b3a-4146-89a0-60467275ae6a
+GET http://{{host}}/invites/6a7d9b6a-6651-4fad-a442-31c4af5cb91f
 
 ### Get subscriber invites clicks
-GET http://{{host}}/subscribers/3cc72c15-34b5-4933-b6bf-854ac97dd60d/ranking/clicks
+GET http://{{host}}/subscribers/6a7d9b6a-6651-4fad-a442-31c4af5cb91f/ranking/clicks
 
 ### Get subscriber invites count
-GET http://{{host}}/subscribers/3cc72c15-34b5-4933-b6bf-854ac97dd60d/ranking/count
+GET http://{{host}}/subscribers/6a7d9b6a-6651-4fad-a442-31c4af5cb91f/ranking/count
 
 ### Get subscriber ranking position
-GET http://{{host}}/subscribers/3cc72c15-34b5-4933-b6bf-854ac97dd60d/ranking/position
+GET http://{{host}}/subscribers/6a7d9b6a-6651-4fad-a442-31c4af5cb91f/ranking/position
 
 ### Get ranking
 GET http://{{host}}/ranking
+
+### Send message to AI
+POST http://{{host}}/messages
+Content-Type: application/json
+
+{
+  "message": "Quais usuários dos e-mails dos usuários cadastrados em minha aplicação?"
+}
