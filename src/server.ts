@@ -26,7 +26,7 @@ app.register(fastifyCors)
 app.register(fastifySwagger, {
   openapi: {
     info: {
-      title: 'NLW Connect',
+      title: 'Gmo Connect AI',
       version: '0.1',
     },
   },

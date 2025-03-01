@@ -21,7 +21,7 @@ export const sendMessageRoute: FastifyPluginAsyncZod = async app => {
         },
       },
     },
-    async (request, reply) => {
+    async (request, reply) => {debugger
       const { message } = request.body
       const { response } = await answerUserMessage({ 
         message

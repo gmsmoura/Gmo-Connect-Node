@@ -1,4 +1,12 @@
 @host = localhost:3333
+@message1 = "Quais usuários dos e-mails dos usuários cadastrados em minha aplicação?"
+@message2 = "Quantos usuários inscritos possuem e-mail do gmail.com?"
+
+@message3 = "Me retorne o e-mail e o número de indicações de cada usuário inscrito."
+
+@message4 = "Me dê o nome do usuário que está com a maior pontuação no ranking."
+
+@message5 = "Me diga o nome dos usuários que não conseguiram convidar ninguém para o evento."
 
 ### Subscribe to event
 POST http://{{host}}/subscriptions
@@ -30,5 +38,5 @@ POST http://{{host}}/messages
 Content-Type: application/json
 
 {
-  "message": "Quais usuários dos e-mails dos usuários cadastrados em minha aplicação?"
+  "message": "{{message2}}"
 }
