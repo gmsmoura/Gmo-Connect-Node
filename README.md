@@ -1,19 +1,23 @@
 # Gmo-Connect-Node
 
-Criar o arquivo .env que ficou fora dos commits do repositório:
+Se atentar ao arquivo .env nos commits devido as chaves de api;
 
-# Server
-PORT=3333
+Comandos para executar o projeto:
 
-# Database
-DATABASE_URL="postgresql://docker:docker@localhost:5432/connect"
+1 - docker compose up - d
 
-# Redis
-REDIS_URL="redis://localhost:6379"
+# comando para liberar permissão de adm para execução dos comandos powershell
+2 - Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
-# URLs
-API_URL="http://localhost:3333"
-WEB_URL="http://localhost:3000"
+3 - npm install -g pnpm
 
-# OpenAI Key
-OPENAI_API_KEY="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"
+# confirmar versão pnpm
+4 - pnpm -v
+
+# adicionar pacote drizzle-kit
+5 - pnpm add -D drizzle-kit
+
+# aplicar migrate para subir as configurações de banco de dados
+6 - pnpm drizzle-kit migrate
+
+7 - pnpm run dev
