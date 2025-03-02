@@ -4,7 +4,7 @@ Se atentar ao arquivo .env nos commits devido as chaves de api;
 
 Comandos para executar o projeto:
 
-1 - docker compose up - d
+1 - docker compose up -d
 
 # comando para liberar permissão de adm para execução dos comandos powershell
 2 - Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
